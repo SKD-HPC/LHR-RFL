@@ -1,0 +1,16 @@
+python train_rl.py \
+--image_dir data/mimic_cxr/images/ \
+--ann_path data/mimic_cxr/annotation.json \
+--dataset_name mimic_cxr \
+--max_seq_length 100 \
+--threshold 10 \
+--batch_size 4 \
+--epochs 20 \
+--save_dir results/MIMIC-CXR \
+--step_size 1 \
+--d_vf 2048 \
+--gamma 0.8 \
+--early_stop 1 \
+--num_layers 3 \
+--resume  \
+--seed 17897
